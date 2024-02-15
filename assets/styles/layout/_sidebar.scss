@@ -1,0 +1,29 @@
+@use '../mixin' as *;
+
+
+.sidebar {
+    min-width: 200px;
+    margin-right: 50px;
+
+    @include xs {
+        margin: 0;
+    }
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+}
+
+.sidebar-nav a i {
+    color: var(--color-dark);
+
+}
+
+.sidebar-nav a:hover {
+    opacity: 0.8;
+    transition: opacity 0.4s;
+}
